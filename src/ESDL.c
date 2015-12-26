@@ -249,6 +249,7 @@ int SDL_contextEmpty(t_context * context) {
 }
 
 int SDL_requestExit() {
+	SDL_UpdateEvents(&in);
 	return (in.quit);
 }
 
